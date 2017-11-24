@@ -19,7 +19,7 @@ namespace TFS_Test
             //     Port is the port that Team Foundation uses. The default port is 8080.
             //     VDir is the virtual path to the Team Foundation application. The default path is tfs.
             Uri tfsUri = (args.Length < 1) ?
-                new Uri("http://Server:Port/VDir") : new Uri(args[0]);
+                new Uri("https://benjiinatinternship.visualstudio.com/MyFirstProject") : new Uri(args[0]);
 
             TfsConfigurationServer configurationServer =
                 TfsConfigurationServerFactory.GetConfigurationServer(tfsUri);
